@@ -10,5 +10,22 @@ do
 		exit 0
 	fi
 done
-
 echo "$n is a prime number"
+
+s=0
+rev=""
+temp=$n
+while [ $n -gt 0 ]
+do
+	s=$(( $num % 10 ))
+	n=$(( $num /10 ))
+rev=$( echo ${rev}${s} )
+done
+
+	if [ $temp -eq $rev ]
+	then
+   echo "Number is palindrome"
+else
+   echo "Number is NOT palindrome"
+fi
+
