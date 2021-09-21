@@ -1,4 +1,4 @@
-echo  "Enter the Number :" 
+echo  "Enter the Number :"
 read n
 
 for((i=2;i<=$n/2;i++))
@@ -12,20 +12,5 @@ do
 done
 echo "$n is a prime number"
 
-s=0
-rev=""
-temp=$n
-while [ $n -gt 0 ]
-do
-	s=$(( $num % 10 ))
-	n=$(( $num /10 ))
-rev=$( echo ${rev}${s} )
-done
 
-	if [ $temp -eq $rev ]
-	then
-   echo "Number is palindrome"
-else
-   echo "Number is NOT palindrome"
-fi
 

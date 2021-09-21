@@ -1,6 +1,5 @@
 echo -n "Enter number : "
 read n
- 
 sd=0
 rev=""
 on=$n
